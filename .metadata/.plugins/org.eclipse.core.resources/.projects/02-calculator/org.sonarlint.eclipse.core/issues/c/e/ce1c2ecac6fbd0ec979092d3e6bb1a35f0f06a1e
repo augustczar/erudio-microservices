@@ -1,0 +1,52 @@
+
+‘
+java:S1192"]Define a constant instead of duplicating this literal "Please, set a numeric value!" 6 times.(Ù•ªÚÿÿÿÿÿHœRCRITICALZ
+CODE_SMELL
+q	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(£Í²©HRMAJORZ
+CODE_SMELL
+q	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(œà‘ÙHRMAJORZ
+CODE_SMELL
+v	java:S112*"FDefine and throw a dedicated exception instead of using a generic one.(éé«ûÿÿÿÿHŸRMAJORZ
+CODE_SMELL
+v	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(›©ğøÿÿÿÿH RMAJORZ
+CODE_SMELL
+v	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(‹©àşÿÿÿÿH¡RMAJORZ
+CODE_SMELL
+q	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(íË¤¯H¢RMAJORZ
+CODE_SMELL
+
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(¼ì·ÖÿÿÿÿÿH£RMINORZ
+CODE_SMELL
+
+java:S1488%"^Immediately return this expression instead of assigning it to the temporary variable "result".(œëç‹úÿÿÿÿH¤RMINORZ
+CODE_SMELL
+
+java:S1488."^Immediately return this expression instead of assigning it to the temporary variable "result".(çÊ­ğÿÿÿÿÿH¥RMINORZ
+CODE_SMELL
+Š
+java:S14887"^Immediately return this expression instead of assigning it to the temporary variable "result".(ºã¿÷H¦RMINORZ
+CODE_SMELL
+Š
+java:S1488@"^Immediately return this expression instead of assigning it to the temporary variable "result".(¦¦ƒëH§RMINORZ
+CODE_SMELL
+‰
+java:S1488I"^Immediately return this expression instead of assigning it to the temporary variable "result".(¡‡Æ|H¨RMINORZ
+CODE_SMELL
+y
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ä±§áşÿÿÿÿH©RMINORZ
+CODE_SMELL
+t
+java:S4488 "HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¥íù”HªRMINORZ
+CODE_SMELL
+t
+java:S4488)"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÿåŸÓH«RMINORZ
+CODE_SMELL
+y
+java:S44882"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÃÔø‰ıÿÿÿÿH¬RMINORZ
+CODE_SMELL
+t
+java:S4488;"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¡ø¢‘H­RMINORZ
+CODE_SMELL
+t
+java:S4488D"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(×Ø£çH®RMINORZ
+CODE_SMELL
