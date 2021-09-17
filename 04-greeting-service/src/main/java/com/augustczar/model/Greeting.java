@@ -1,4 +1,4 @@
-package com.augustczar;
+package com.augustczar.model;
 
 public class Greeting {
 
