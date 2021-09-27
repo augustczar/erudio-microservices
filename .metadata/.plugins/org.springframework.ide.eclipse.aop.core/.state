@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="02-calculator"/>
+<aop-project name="04-greeting-service"/>
+<aop-project name="foo"/>
+<aop-project name="05-cambio-service"/>
+<aop-project name="augustczar-config-service"/>
 </aop-reference-model>

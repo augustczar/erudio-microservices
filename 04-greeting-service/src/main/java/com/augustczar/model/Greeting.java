@@ -1,11 +1,16 @@
 package com.augustczar.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
 public class Greeting {
 
 	private long id;
 
 	private String content;
-
+	
 	public Greeting(long id, String content) {
 		this.id = id;
 		this.content = content;
