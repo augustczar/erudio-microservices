@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="04-greeting-service"/>
-<aop-project name="foo"/>
+<aop-project name="06-api-gateway"/>
 <aop-project name="05-cambio-service"/>
+<aop-project name="05-book-service"/>
 <aop-project name="augustczar-config-service"/>
+<aop-project name="06-naming-service"/>
+<aop-project name="augustczar-erudio-config-server"/>
 </aop-reference-model>

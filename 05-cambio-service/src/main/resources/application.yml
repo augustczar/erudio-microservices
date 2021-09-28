@@ -1,5 +1,9 @@
 server:
   port: 8000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka
 spring:
   application:
     name: cambio-service
@@ -7,7 +11,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cambio_service?useTimezone=true&serverTimezone=UTC
     username: root
-    password: MS_czar615615
+    password:  
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,4 +24,4 @@ spring:
     schemas:
     - cambio_service
     user: root
-    password: 
+    password:  

@@ -2,6 +2,7 @@ package com.augustczar.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,7 +17,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = {"id"})
@@ -25,6 +25,19 @@ public class Cambio implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
+	public Cambio() {
+	}
+
+	public Cambio(Long id, String from, String to, BigDecimal conversionFactor, BigDecimal convertedValue,
+			String enviroment) {
+		this.id = id;
+		this.from = from;
+		this.to = to;
+		this.conversionFactor = conversionFactor;
+		this.convertedValue = convertedValue;
+		this.enviroment = enviroment;
+	}
+
 	@Getter
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -96,6 +109,25 @@ public class Cambio implements Serializable{
 
 	public void setEnviroment(String enviroment) {
 		this.enviroment = enviroment;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(conversionFactor, convertedValue, enviroment, from, id, to);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cambio other = (Cambio) obj;
+		return Objects.equals(conversionFactor, other.conversionFactor)
+				&& Objects.equals(convertedValue, other.convertedValue) && Objects.equals(enviroment, other.enviroment)
+				&& Objects.equals(from, other.from) && Objects.equals(id, other.id) && Objects.equals(to, other.to);
 	}
 	
 	
