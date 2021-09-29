@@ -4,6 +4,22 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8762/eureka
+resilience4j:
+  bulkhead:
+    instances:
+      default:
+        max-concurrent-calls: 10
+  ratelimiter:
+    instances:
+      default:
+        limit-for-period: 2
+        limit-refresh-period: 10s
+  retry:
+    instances:
+      foo-bar:
+        max-attempts: 5
+        wait-duration: 1s
+        enable-exponential-backoff: true
 spring:
   application:
     name: book-service
@@ -11,7 +27,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/book_service?useTimezone=true&serverTimezone=UTC
     username: root
-    password:  
+    password:   
   jackson:
     default-property-inclusion: non-null
     serialization:
@@ -28,4 +44,4 @@ spring:
     schemas:
     - book_service
     user: root
-    password:  
+    password:   
